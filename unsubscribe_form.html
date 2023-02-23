@@ -1,0 +1,104 @@
+﻿<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+    <!--
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+        .active, .accordion:hover {
+            background-color: #656565;
+            color: #ffffff;
+        }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+    -->
+</style>
+<h4 style="text-align: center;">Frequently Asked Questions Accoedion Form.</h4>
+<h2>Category 1</h2>
+<button class="accordion">Question 1 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<button class="accordion">Question 2 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<button class="accordion">Question 3 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<button class="accordion">Question 4 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<h2>Category 2</h2>
+<button class="accordion">Question 1 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<button class="accordion">Question 2 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<button class="accordion">Question 3 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<h2>Category 3</h2>
+<button class="accordion">Question 1 ?</button>
+<div class="panel">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<h2>Category 4</h2>
+<button class="accordion">Question 1 ?</button>
+<div class="panel" style="border-bottom: 1px solid #e1e1e1;">
+    <ul style="padding: 20px 10px;">
+        <li>Example 1</li>
+        <li>Example 2</li>
+        <li>Example 3</li>
+        <li>Example 4</li>
+        <li>Example 5</li>
+        <li>Example 6</li>
+        <li>Example 7</li>
+    </ul>
+</div>
+<button class="accordion">Question 2 ?</button>
+<div class="panel" style="border-bottom: 1px solid #e1e1e1;">
+    <p style="padding: 20px 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus tellus, rhoncus a dui nec, eleifend placerat ante. Vestibulum aliquet erat ac faucibus interdum. Phasellus id aliquet felis.</p>
+</div>
+<br />
+<br />
+<p style="text-align: center;"><strong>For more information please contact us.</strong></p>
+<p style="text-align: center;"><strong>Email: example@example.com </strong></p>
+<p style="text-align: center;"><strong>Telephone: +00 000 00000000</strong></p>
+<script>
+    // <![CDATA[
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+// ]]></script>
